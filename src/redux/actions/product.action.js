@@ -62,7 +62,7 @@ const createProduct = (data, setShow, navigate) => async(dispatch)=>{
         setShow(true)
         setTimeout(()=>{
             setShow(false)
-            navigate("/store-shop/store")
+            window.location.replace("#/store")
         },1000)
     }catch(err){
         console.log(err)
@@ -106,7 +106,7 @@ const editProduct = (data, setShow, navigate, id) => async(dispatch)=>{
         setShow(true)
         setTimeout(()=>{
             setShow(false)
-            navigate("/store-shop/store")
+            window.location.replace("#/store")
         },1000)
     }catch(err){
         console.log(err)

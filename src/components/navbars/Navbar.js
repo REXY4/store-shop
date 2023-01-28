@@ -74,7 +74,7 @@ function NavbarBasic({login,cart, setShowModal, user, logout}) {
     bg="dark"
     className="main-nav">
       <Container>
-        <Navbar.Brand href="/">Shoping Web</Navbar.Brand>
+        <Navbar.Brand href="/store-shop">Shoping Web</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="justify-content-end">
         <Nav className="me-auto">
@@ -102,7 +102,7 @@ function NavbarBasic({login,cart, setShowModal, user, logout}) {
         </Nav.Link>
       </Nav>
       {user.isLogin && 
-      <Nav.Link href="/store-shop/cart" 
+      <Nav.Link href="#/cart" 
       onMouseEnter={()=>setCartShake(true)}
       onMouseLeave={()=>setCartShake(false)}
       >

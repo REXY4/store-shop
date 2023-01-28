@@ -24,7 +24,7 @@ const StorePages = ({
                 }}>
                     <Card.Body className="d-flex">
                     <div 
-                    onClick={()=>navigate("/store-shop/products")}
+                    onClick={()=>window.location.replace("#/products")}
                     onMouseEnter={()=>setAddButton(true)}
                     onMouseLeave={()=>setAddButton(false)}
                     style={{

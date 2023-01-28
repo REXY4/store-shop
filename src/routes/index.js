@@ -7,12 +7,8 @@ import ProtectedRoute from "./ProtectedRoute";
 
 const base = "store-shop"
 const router =  createHashRouter([
-    // {
-    //   path: "/",
-    //   element: <Main />,
-    // },
     {
-      path: `${base}/cart`,
+      path: `/cart`,
       element: <CartPages />,
     },
     {
@@ -21,10 +17,10 @@ const router =  createHashRouter([
     },
     {
       path: `/store`,
-      element: <StorePages />,
+      element: <ProtectedRoute><StorePages /></ProtectedRoute>,
     },
     {
-      path: `/${base}/products`,
+      path: `/products`,
       element:<ProtectedRoute><ProductPages /></ProtectedRoute>,
     },
   ]);
